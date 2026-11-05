@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-11-05T09:06:11.227499+00:00",
+  "actor": "jarvis-assisted",
+  "command": [
+    "/usr/bin/python3",
+    "main.py",
+    "--data",
+    "data.json",
+    "--repeats",
+    "100"
+  ],
+  "cwd": "/mnt/c/Users/damag/Documents/ChatGPT/코디세이/제출자료/mission03",
+  "stdin": null,
+  "stdout": "=== 강준권의 Mini NPU Simulator ===\n\n[1] 필터 로드\nsize_5 필터 로드 완료 (Cross, X)\nsize_13 필터 로드 완료 (Cross, X)\nsize_25 필터 로드 완료 (Cross, X)\n\n[2] 패턴 분석 (라벨 정규화 적용)\n\n--- size_5_1 ---\nCross 점수: 0.90000000000000002\nX 점수: 0.89999999999999991\n판정: UNDECIDED | expected: X\nFAIL | 동점(UNDECIDED): 허용오차 내 점수\n\n--- size_5_2 ---\nCross 점수: 8.9000000000000004\nX 점수: 0.10000000000000001\n판정: Cross | expected: Cross\nPASS | 일치\n\n--- size_13_1 ---\nCross 점수: 0.29999999999999999\nX 점수: 14.700000000000008\n판정: X | expected: X\nPASS | 일치\n\n--- size_13_2 ---\nCross 점수: 7.4999999999999973\nX 점수: 7.5\n판정: UNDECIDED | expected: Cross\nFAIL | 동점(UNDECIDED): 허용오차 내 점수\n\n--- size_25_1 ---\nCross 점수: 4.9000000000000004\nX 점수: 4.8999999999999986\n판정: UNDECIDED | expected: X\nFAIL | 동점(UNDECIDED): 허용오차 내 점수\n\n--- size_25_2 ---\nCross 점수: 52.899999999999999\nX 점수: 0.10000000000000001\n판정: Cross | expected: Cross\nPASS | 일치\n\n성능 분석: MAC 함수 한 번, 평균/100회 (입출력 제외)\n크기       평균 시간(ms)       MAC 횟수(N²)\n 3x3       0.004753              9\n 5x5       0.009498              25\n13x13      0.078656              169\n25x25      0.213553              625\n\n총 테스트: 6개 / 통과: 3개 / 실패: 3개\n- size_5_1: 동점(UNDECIDED): 허용오차 내 점수\n- size_13_2: 동점(UNDECIDED): 허용오차 내 점수\n- size_25_1: 동점(UNDECIDED): 허용오차 내 점수\n",
+  "stderr": "",
+  "exit_code": 0
+}

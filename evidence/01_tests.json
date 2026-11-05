@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-11-05T09:06:11.227499+00:00",
+  "actor": "jarvis-assisted",
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "cwd": "/mnt/c/Users/damag/Documents/ChatGPT/코디세이/제출자료/mission03",
+  "stdin": null,
+  "stdout": "",
+  "stderr": "test_bad_case_does_not_hide_other_cases (test_npu.NpuTests.test_bad_case_does_not_hide_other_cases) ... ok\ntest_benchmark_repeats_and_operation_counts (test_npu.NpuTests.test_benchmark_repeats_and_operation_counts) ... ok\ntest_corrupt_or_missing_json (test_npu.NpuTests.test_corrupt_or_missing_json) ... ok\ntest_cross_x_scores (test_npu.NpuTests.test_cross_x_scores) ... ok\ntest_epsilon_tie_and_real_difference (test_npu.NpuTests.test_epsilon_tie_and_real_difference) ... ok\ntest_fractional_negative_and_zero (test_npu.NpuTests.test_fractional_negative_and_zero) ... ok\ntest_indexed_read_and_write (test_npu.NpuTests.test_indexed_read_and_write) ... ok\ntest_interactive_mode_result (test_npu.NpuTests.test_interactive_mode_result) ... ok\ntest_interactive_retries_bad_rows (test_npu.NpuTests.test_interactive_retries_bad_rows) ... ok\ntest_mac_size_and_overflow (test_npu.NpuTests.test_mac_size_and_overflow) ... ok\ntest_matrix_shape_and_types (test_npu.NpuTests.test_matrix_shape_and_types) ... ok\ntest_missing_filter_and_unknown_label (test_npu.NpuTests.test_missing_filter_and_unknown_label) ... ok\ntest_normalization (test_npu.NpuTests.test_normalization) ... ok\ntest_official_data_results_and_counts (test_npu.NpuTests.test_official_data_results_and_counts) ... ok\ntest_schema_failures_counted_and_continue (test_npu.NpuTests.test_schema_failures_counted_and_continue) ... ok\ntest_tie_is_fail_against_x (test_npu.NpuTests.test_tie_is_fail_against_x) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.253s\n\nOK\n",
+  "exit_code": 0
+}

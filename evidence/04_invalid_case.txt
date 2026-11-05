@@ -1,0 +1,57 @@
+$ /usr/bin/python3 main.py --data /tmp/tmp0ag_fb33/invalid-case.json --repeats 10
+=== 강준권의 Mini NPU Simulator ===
+
+[1] 필터 로드
+size_5 필터 로드 완료 (Cross, X)
+size_13 필터 로드 완료 (Cross, X)
+size_25 필터 로드 완료 (Cross, X)
+
+[2] 패턴 분석 (라벨 정규화 적용)
+
+--- size_5_1 ---
+Cross 점수: 0.90000000000000002
+X 점수: 0.89999999999999991
+판정: UNDECIDED | expected: X
+FAIL | 동점(UNDECIDED): 허용오차 내 점수
+
+--- size_5_2 ---
+FAIL | 데이터/스키마 오류: 행 수 불일치: 기대 5, 실제 1
+
+--- size_13_1 ---
+Cross 점수: 0.29999999999999999
+X 점수: 14.700000000000008
+판정: X | expected: X
+PASS | 일치
+
+--- size_13_2 ---
+Cross 점수: 7.4999999999999973
+X 점수: 7.5
+판정: UNDECIDED | expected: Cross
+FAIL | 동점(UNDECIDED): 허용오차 내 점수
+
+--- size_25_1 ---
+Cross 점수: 4.9000000000000004
+X 점수: 4.8999999999999986
+판정: UNDECIDED | expected: X
+FAIL | 동점(UNDECIDED): 허용오차 내 점수
+
+--- size_25_2 ---
+Cross 점수: 52.899999999999999
+X 점수: 0.10000000000000001
+판정: Cross | expected: Cross
+PASS | 일치
+
+성능 분석: MAC 함수 한 번, 평균/10회 (입출력 제외)
+크기       평균 시간(ms)       MAC 횟수(N²)
+ 3x3       0.004120              9
+ 5x5       0.009350              25
+13x13      0.052590              169
+25x25      0.222560              625
+
+총 테스트: 6개 / 통과: 2개 / 실패: 4개
+- size_5_1: 동점(UNDECIDED): 허용오차 내 점수
+- size_5_2: 데이터/스키마 오류: 행 수 불일치: 기대 5, 실제 1
+- size_13_2: 동점(UNDECIDED): 허용오차 내 점수
+- size_25_1: 동점(UNDECIDED): 허용오차 내 점수
+
+exit_code=0

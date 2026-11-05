@@ -1,0 +1,127 @@
+{
+  "total": 6,
+  "passed": 3,
+  "failed": [
+    {
+      "id": "size_5_1",
+      "passed": false,
+      "cross_score": 0.9,
+      "x_score": 0.8999999999999999,
+      "prediction": "UNDECIDED",
+      "expected": "X",
+      "reason": "동점(UNDECIDED): 허용오차 내 점수",
+      "size": 5
+    },
+    {
+      "id": "size_13_2",
+      "passed": false,
+      "cross_score": 7.499999999999997,
+      "x_score": 7.5,
+      "prediction": "UNDECIDED",
+      "expected": "Cross",
+      "reason": "동점(UNDECIDED): 허용오차 내 점수",
+      "size": 13
+    },
+    {
+      "id": "size_25_1",
+      "passed": false,
+      "cross_score": 4.9,
+      "x_score": 4.899999999999999,
+      "prediction": "UNDECIDED",
+      "expected": "X",
+      "reason": "동점(UNDECIDED): 허용오차 내 점수",
+      "size": 25
+    }
+  ],
+  "results": [
+    {
+      "id": "size_5_1",
+      "passed": false,
+      "cross_score": 0.9,
+      "x_score": 0.8999999999999999,
+      "prediction": "UNDECIDED",
+      "expected": "X",
+      "reason": "동점(UNDECIDED): 허용오차 내 점수",
+      "size": 5
+    },
+    {
+      "id": "size_5_2",
+      "passed": true,
+      "cross_score": 8.9,
+      "x_score": 0.1,
+      "prediction": "Cross",
+      "expected": "Cross",
+      "reason": "일치",
+      "size": 5
+    },
+    {
+      "id": "size_13_1",
+      "passed": true,
+      "cross_score": 0.3,
+      "x_score": 14.700000000000008,
+      "prediction": "X",
+      "expected": "X",
+      "reason": "일치",
+      "size": 13
+    },
+    {
+      "id": "size_13_2",
+      "passed": false,
+      "cross_score": 7.499999999999997,
+      "x_score": 7.5,
+      "prediction": "UNDECIDED",
+      "expected": "Cross",
+      "reason": "동점(UNDECIDED): 허용오차 내 점수",
+      "size": 13
+    },
+    {
+      "id": "size_25_1",
+      "passed": false,
+      "cross_score": 4.9,
+      "x_score": 4.899999999999999,
+      "prediction": "UNDECIDED",
+      "expected": "X",
+      "reason": "동점(UNDECIDED): 허용오차 내 점수",
+      "size": 25
+    },
+    {
+      "id": "size_25_2",
+      "passed": true,
+      "cross_score": 52.9,
+      "x_score": 0.1,
+      "prediction": "Cross",
+      "expected": "Cross",
+      "reason": "일치",
+      "size": 25
+    }
+  ],
+  "performance": [
+    {
+      "size": 3,
+      "mean_ms": 0.010906,
+      "operations": 9
+    },
+    {
+      "size": 5,
+      "mean_ms": 0.008033,
+      "operations": 25
+    },
+    {
+      "size": 13,
+      "mean_ms": 0.05010201,
+      "operations": 169
+    },
+    {
+      "size": 25,
+      "mean_ms": 0.26301406,
+      "operations": 625
+    }
+  ],
+  "repeats": 100,
+  "checked_at": "2026-11-05T09:06:11.227499+00:00",
+  "actor": "jarvis-assisted",
+  "unit_tests": 16,
+  "data_sha256": "1d5dc0f792b12802f954d92da4c17b0770b4f19efe846fec50ad589858d8c3e4",
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.43"
+}

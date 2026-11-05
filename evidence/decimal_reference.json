@@ -1,0 +1,44 @@
+[
+  {
+    "id": "size_5_1",
+    "cross_decimal": "0.90",
+    "x_decimal": "0.90",
+    "difference_decimal": "0.00",
+    "tie": true
+  },
+  {
+    "id": "size_5_2",
+    "cross_decimal": "8.90",
+    "x_decimal": "0.10",
+    "difference_decimal": "8.80",
+    "tie": false
+  },
+  {
+    "id": "size_13_1",
+    "cross_decimal": "0.30",
+    "x_decimal": "14.70",
+    "difference_decimal": "14.40",
+    "tie": false
+  },
+  {
+    "id": "size_13_2",
+    "cross_decimal": "7.50",
+    "x_decimal": "7.50",
+    "difference_decimal": "0.00",
+    "tie": true
+  },
+  {
+    "id": "size_25_1",
+    "cross_decimal": "4.90",
+    "x_decimal": "4.90",
+    "difference_decimal": "0.00",
+    "tie": true
+  },
+  {
+    "id": "size_25_2",
+    "cross_decimal": "52.90",
+    "x_decimal": "0.10",
+    "difference_decimal": "52.80",
+    "tie": false
+  }
+]
